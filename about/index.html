@@ -3,12 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Claudia's personal Profolio</title>    
+    <title>Claudia's personal Portfolio</title>    
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/footers/">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://rendro.github.io/easy-pie-chart/javascripts/jquery.easy-pie-chart.js"></script>    
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" href="../images/cpm.ico">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -58,25 +60,42 @@
             </div>
           </nav>
     </header>   
-    <div class="container">
-      <div class="position-relative overflow-hidden  text-center">
-        <img class="img-responsive person-avatar" src="../images/ClaudiaPhoto.png" alt="Claudia Paola Quality Engeneer and Fullstack Developer" width="200px">
-        <div class="mx-auto">
-          <h1 class="display-4 fw-normal  text-main ">About Me...</h1>
-          <p class="lead fw-normal justify-content-start">Hi, I'm Claudia Paola Munoz, a Senior Quality Engeneer based in Cochabamba, Bolivia. Currently I'm working at 
-            <a href="https://cafeto.co/">Cafeto.co</a> as automation quality engeneer. </p>
-            <p class="lead fw-normal">
-            I have nearly 10 years of experience in quality but since a couple of years ago I been working with automations test frameworks and I found out that 
-            I love the ability of build something that will helps you  and make easy your life. </p>
-            <p class="lead fw-normal">So I decided to improve my web development skills  and start building software to see the benefits  and see people use the software I'm building. 
-            With my Quality engineer skills I believe I have a firm foundations to start developing high quality software. </p>
-            <p class="lead fw-normal">
-            In order to meet my goal I have started a MIT xPro course, I'm currently finishing the first module and I have been able to see a lot of improvement on my development skills.
-            I invite you to see my portfolio and enjoy my project as much as I enjoy developing each one.
-
-          </p>
-          
+    <div class="container">    
+      <div class="row position-relative overflow-hidden  text-center">
+        <div class="col-sm-5">
+          <img class="img-responsive person-avatar" src="../images/ClaudiaPhoto.png" alt="Claudia Paola Quality Engineer and Fullstack Developer" width="250px">
+        </div>
+        <div class="col-sm-7">
+            <h1 class="display-4">About Me...</h1>            
+            <p class="lead fw-normal">I'm Claudia Munoz, a Senior Quality and FullStack developer Engineer based in Cochabamba, Bolivia.</p>
+            <p class="lead description" >Currently I'm working at a Colombian Company 
+              <a href="https://cafeto.co/" target="_blank" class="external">Cafeto.co</a>, with nearly 10 years of experience. </p>
+            <p class="lead description">
+              Since 2018 I been working with automation test frameworks, and during 
+              this process I realize I love to build things that will help and make your life easier. </p>
         </div>        
+        <div class="row position-relative overflow-hidden  text-center">
+          <div class="col-sm-12">            
+            <p class="lead description">
+              To achieve my goals in february 2022 I have started a MIT xPro course, since then I have been able to see a lot of improvement on my development skills, proof of 
+              these are my portfolio projects. 
+              </p>
+        </div>
+        </div>
+      </div>
+
+      <div class="row position-relative overflow-hidden  text-center">
+        <div class="col-sm-12">            
+          <div class="chart" data-percent="60">HTML5</div>
+          <div class="chart" data-percent="50">CSS3</div>
+          <div class="chart" data-percent="30">JavaScript</div>
+          <div class="chart" data-percent="50">Java</div>          
+          <div class="chart" data-percent="50">Selenium</div>
+          <div class="chart" data-percent="30">Cypress</div>
+          
+      </div>
+      </div>
+
       </div>
 
     <footer class="footer mt-auto py-xl-5">
@@ -92,5 +111,18 @@
         </span>
       </div>
     </footer>
+    <script>
+      $(function() {
+      $('.chart').easyPieChart({
+        scaleColor: "#ecf0f1",
+        lineWidth: 20,
+        lineCap: 'butt',
+        barColor: '#1abc9c',
+        trackColor:	"#ecf0f1",
+        size: 160,
+        animate: 500
+      });
+    });
+    </script>
 </body>
 </html>
