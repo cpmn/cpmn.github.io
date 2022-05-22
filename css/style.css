@@ -2,10 +2,19 @@
     margin: 0;
     padding: 0;
 }
+body {
+    background-image: url("../images/background.JPG");    
+}
+
 .header 
 {
-    height: 100vh;
+    height: 100%;
 }
+
+.person-avatar {
+    border-radius: 50%;
+  }
+
 .navbar-style
 {
     box-shadow: 0 5px 10px #efefef;
