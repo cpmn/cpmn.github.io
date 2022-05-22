@@ -14,8 +14,13 @@ body {
 
 .person-avatar {
     border-radius: 50%;
-    width: 40%;
-  }
+    
+}
+
+p {
+    text-align: justify;
+  text-justify: inter-word;
+}
 
 .navbar-style
 {
